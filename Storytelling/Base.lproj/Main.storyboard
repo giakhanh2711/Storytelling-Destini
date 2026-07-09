@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Storytelling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="One piece- Isla de drum" translatesAutoresizingMaskIntoConstraints="NO" id="Nn8-K1-kKy" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t5T-U8-XbN">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGM-z8-2TW">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="476"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5A-Md-Vjq">
+                                                <rect key="frame" x="20" y="28" width="355" height="341"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">In this example, we will create two buttons. The first one is to set normal text and another one is for attributed text. In this step, we will add and customize the buttons. After that, we will add constraints to both buttons. Here is the code.</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33333334329999997" green="0.32549020649999999" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="25" name="BradleyHandITCTT-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="13" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="u5A-Md-Vjq" secondAttribute="trailing" constant="10" id="Lrn-PQ-RFX"/>
+                                            <constraint firstItem="u5A-Md-Vjq" firstAttribute="leading" secondItem="GGM-z8-2TW" secondAttribute="leadingMargin" constant="12" id="Wcm-PV-5PN"/>
+                                            <constraint firstItem="u5A-Md-Vjq" firstAttribute="top" secondItem="GGM-z8-2TW" secondAttribute="topMargin" constant="20" id="nbn-8e-J2D"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-VF-HFU">
+                                        <rect key="frame" x="0.0" y="496" width="393" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="7bO-hL-Hky"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="Button background">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G50-WC-mG3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fG7-xI-8ug">
+                                        <rect key="frame" x="0.0" y="591" width="393" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="RDQ-Zx-Q0t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="Button background">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMO-nh-3Pu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nn8-K1-kKy" secondAttribute="bottom" id="4Sm-ce-4lc"/>
+                            <constraint firstItem="t5T-U8-XbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5U5-yu-vax"/>
+                            <constraint firstAttribute="trailing" secondItem="Nn8-K1-kKy" secondAttribute="trailing" id="8fD-25-JSU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t5T-U8-XbN" secondAttribute="trailing" id="J0m-yg-waV"/>
+                            <constraint firstItem="Nn8-K1-kKy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MPg-0F-G9E"/>
+                            <constraint firstItem="t5T-U8-XbN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q2C-nt-mUd"/>
+                            <constraint firstItem="Nn8-K1-kKy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dSk-Yk-JBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t5T-U8-XbN" secondAttribute="bottom" id="vKK-dA-pgc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstChoiceUIButton" destination="RzV-VF-HFU" id="pgx-hq-XwE"/>
+                        <outlet property="secondChoiceUIButton" destination="fG7-xI-8ug" id="Eki-NS-XTH"/>
+                        <outlet property="storyUILabel" destination="u5A-Md-Vjq" id="6L2-gY-fmI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button background" width="131" height="25"/>
+        <image name="One piece- Isla de drum" width="245.33332824707031" height="245.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

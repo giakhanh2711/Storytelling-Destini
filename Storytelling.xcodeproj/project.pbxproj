@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AF998EF22FFD521F00E5394C /* Exceptions for "Storytelling" folder in "Storytelling" target */ = {
+		AF998F1A2FFE086300E5394C /* Exceptions for "Storytelling" folder in "Storytelling" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AF998EE22FFD521E00E5394C /* Storytelling */ = {
+		AF998F132FFE086300E5394C /* Storytelling */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				AF998EF22FFD521F00E5394C /* Exceptions for "Storytelling" folder in "Storytelling" target */,
+				AF998F1A2FFE086300E5394C /* Exceptions for "Storytelling" folder in "Storytelling" target */,
 			);
 			path = Storytelling;
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		AF998ED72FFD521E00E5394C = {
 			isa = PBXGroup;
 			children = (
-				AF998EE22FFD521E00E5394C /* Storytelling */,
+				AF998F132FFE086300E5394C /* Storytelling */,
 				AF998EE12FFD521E00E5394C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AF998EE22FFD521E00E5394C /* Storytelling */,
+				AF998F132FFE086300E5394C /* Storytelling */,
 			);
 			name = Storytelling;
 			packageProductDependencies = (
